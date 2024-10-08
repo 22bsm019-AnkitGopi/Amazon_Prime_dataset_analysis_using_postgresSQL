@@ -48,8 +48,7 @@ FROM amazon_prime
 GROUP BY 1;
 ```
 
-
-**Objective:** Determine the distribution of content types on Amazon prime.
+**Objective:** Determinig the most common rating for all atypes of content
 
 ### 2. Find the Most Common Rating for Movies and TV Shows
 
@@ -77,9 +76,7 @@ FROM RankedRatings
 WHERE rank = 1;
 ```
 
-
-**Objective:** Identify the most frequently occurring rating for each type of content.
-
+**Objective:** Retrieve all movies released in a specific year.
 
 ### 3. List All Movies Released in a Specific Year (e.g., 2020)
 
@@ -89,7 +86,7 @@ FROM amazon_prime
 WHERE release_year = 2020;
 ```
 
-**Objective:** Retrieve all movies released in a specific year.
+**Objective:** Identify the top 5 countries with the highest number of content items.
 
 ### 4. Find the Top 5 Countries with the Most Content on Amazon prime
 ```sql
@@ -107,8 +104,8 @@ ORDER BY total_content DESC
 LIMIT 5;
 ```
 
-**Objective:** Identify the top 5 countries with the highest number of content items.
 
+**Objective:** Find the movie with the longest duration.
 
 ### 5. Select the longest movie duration
 ```sql
@@ -129,7 +126,7 @@ WHERE type = 'Movie'
 ORDER BY SPLIT_PART(duration, ' ', 1)::INT DESC;
 ```
 
-**Objective:** Find the movie with the longest duration.
+**Objective:** Indentify the Content Added in the Last 5 Years.
 
 ### 6. Find Content Added in the Last 5 Years
 ```sql
