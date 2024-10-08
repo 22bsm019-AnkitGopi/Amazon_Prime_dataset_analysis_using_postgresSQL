@@ -1,6 +1,6 @@
 # Amazon_Prime_dataset_analysis_using_postgresSQL
 
-![Amazon Prime Amalysis]()
+![Amazon Prime Analysis](https://github.com/22bsm019-AnkitGopi/Amazon_Prime_dataset_analysis_using_postgresSQL/blob/main/Amazon-Prime-logo.png)
 
 
 ## Dataset
