@@ -225,11 +225,13 @@ WHERE type = 'Tv show'
 
 ### 11. Count the Number of Content Items in Each Genre
 
+```sql
  SELECT 
     UNNEST(STRING_TO_ARRAY(listed_in, ',')) AS genre,
     COUNT(*) AS total_content
 FROM amazon_prime
 GROUP BY 1;
+```
 
 **Objective:**  Calculate and rank years by the average number of content releases by India.
 
